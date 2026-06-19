@@ -67,23 +67,6 @@ swift build -c release
 .build/release/PomodoroTimer
 ```
 
-## 배포자 참고
-
-```sh
-mkdir -p dist/PomodoroTimer.app/Contents/MacOS
-cp .build/release/PomodoroTimer dist/PomodoroTimer.app/Contents/MacOS/
-```
-
-Swift Package 기반 프로젝트라 배포용 `.app`을 만들려면 앱 번들 구조와 `Info.plist`를 별도로 준비해야 합니다.
-
-## 배포 파일
-
-GitHub Releases에는 아래 파일을 올리는 것을 권장합니다.
-
-- `PomodoroTimer.app`
-- `PomodoroTimer.zip` 또는 `PomodoroTimer.dmg`
-- 소스코드 압축 파일은 GitHub가 자동 생성
-
 ## 라이선스
 
 이 프로젝트는 MIT License로 배포됩니다. 자세한 내용은 [LICENSE](./LICENSE)를 확인하세요.
